@@ -1,0 +1,19 @@
+{
+    "name": "resist/logger",
+    "description": "PSR-3 DB Logger for Fat Free Framework powered apps",
+    "license": "GPL-3.0-only",
+    "type": "library",
+    "minimum-stability": "dev",
+    "autoload": {
+        "classmap": ["src"]
+    },
+    "require": {
+        "php": ">=7.4",
+        "ext-json": "*",
+        "psr/log": "^1.1",
+        "bcosca/fatfree-core": "3.*"
+    },
+    "require-dev": {
+        "resist/dirtydoc": "^1"
+    }
+}
