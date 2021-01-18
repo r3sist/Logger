@@ -43,8 +43,9 @@ class LoggerService
         if (isset($context['uname'])) {
             $mapper->user_name = $context['uname'];
         }
-        if ($this->f3->exists('uname')) {
-            $mapper->user_name = $this->f3->get('uname');
+
+        if ($this->f3->exists('user') && $this->f3->get('user')->username !== null) {
+            $mapper->user_name = $this->f3->get('user')->username;
         }
 
         $mapper->save();
